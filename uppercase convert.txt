@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Convert string to upper case:</p>
+<input type="text" id="anhvinh" value=""></input>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="text"></p>
+
+<script>
+function myFunction() {
+  var text = document.getElementById("anhvinh").value;
+  document.getElementById("text").innerHTML = text.toUpperCase();
+}
+</script>
+
+</body>
+</html>

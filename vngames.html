@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2 onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'green'";> Biết luật trăm trận trăm thắng</h2>
+<element event='some JavaScript'>
+
+<input type ="text" id="age" span="yes" value="13">
+<button onclick="lolihopphap()">Nhấn để coi có hợp pháp không</button>
+<h1 id="loli"></h1>
+  <script>
+var age, hopphap;
+function lolihopphap(){
+age = document.getElementById("age").value;
+    hopphap = (age > 18) ? "Quất tới bến" : "FBI, Open up! ";
+document.getElementById("loli").innerHTML = hopphap;
+
+}
+    //----------------------------------------------------------------------------------------------------------------------------------------
+</script>
+<div onmouseover="this.style.backgroundColor='red'"; onmouseout="this.style.backgroundColor='blue'">
+    <h1 class="pdf">alo alo</h1>
+</div>
+
+<div class="pdf-icon-box" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'green'"; >
+        <span class="name"> T E S T </span>
+</div>
+
+------
+
+<p>Please input a number between 5 and 10:</p>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="p01"></p>
+<script>
+function myFunction() {
+  var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+  try { 
+    if(x == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 5)  throw "too low";
+    if(x > 10)   throw "too high";
+  }
+  catch(err) {
+    message.innerHTML = "Input is " + err;
+  }
+}
+</script>
+<script>
+
+
+function zoomIn()
+{
+    var element = document.getElementById("overlay");
+    element.style.visibility = "visible";
+
+    var x = event.clientX;     // Get the horizontal coordinate
+    var y = event.clientY;     // Get the vertical coordinate
+
+    element.style.top = y - 80;
+    element.style.left = x - 80;
+}
+
+function zoomOut()
+{
+    var element = document.getElementById("overlay");
+    element.style.visibility = "hidden";
+}
+
+</script>
+
+ </body>
+</html>
