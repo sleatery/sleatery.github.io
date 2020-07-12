@@ -72,6 +72,25 @@ function zoomOut()
 }
 
 </script>
+<p>Nhập số vào và nhấn OK</p>
 
+<input id="id1" type="number" max="400" min="100">
+<button onclick="myFunction()">OK</button>
+
+<p>Số nhập vào cần nhỏ hơn 400 và lớn hơn 100</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt = "";
+  if (document.getElementById("id1").validity.rangeOverflow || document.getElementById("id1").validity.rangeUnderflow) {
+    txt = "Số vừa nhập ngoài giới hạn cho phép";
+  } else {
+    txt = "OK đó";
+  } 
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
  </body>
 </html>
